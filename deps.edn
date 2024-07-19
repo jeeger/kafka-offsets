@@ -6,7 +6,8 @@
         org.clojure/tools.cli {:mvn/version "1.0.206"}
         org.slf4j/slf4j-nop {:mvn/version "2.0.2"}}
  :aliases {:build {:extra-paths ["utils"] :exec-fn compile/compile-project}
-           :run {:main-opts ["-e" "(set! *warn-on-reflection* true)" "-m" "offsets.main"]}
+           :run {:main-opts ["-m" "offsets.main"]}
+           :run-warn-reflection {:main-opts ["-e" "(set! *warn-on-reflection* true)" "-m" "offsets.main"]}
            :compile-native {:extra-deps {babashka/process {:mvn/version "0.5.22"}
                                          babashka/fs {:mvn/version "0.1.11"}}
                             :extra-paths ["utils"] :exec-fn compile/compile-native}
