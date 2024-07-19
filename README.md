@@ -8,6 +8,7 @@
 
 Supports profiles to be able to work with different servers, such as prod or staging. Multiple
 topics and groups can be provided to reset offsets for several groups and topics at the same time.
+Profile information is read from a file called "kafkaconfig.edn" in the current directory, an alternate configuration file can be provided with `-c`.
 
 ## Running
 

@@ -200,7 +200,7 @@
 
 (def opts
   [["-e" "--execute" "Execute a potentially destructive action."]
-   ["-c" "--config" "Use a different config file from the default (\"./kafkaconfig.edn\")" :default "./kafkaconfig.edn"]
+   ["-c" "--config FILE" "Use a different config file from the default (\"./kafkaconfig.edn\")" :default "./kafkaconfig.edn"]
    ["-t" "--topic TOPIC" "The topic(s) to act on. Can be provided multiple times." :assoc-fn option-set]
    ["-g" "--group GROUP" "The group(s) to act on. Can be provided multiple times." :assoc-fn option-set]
    ["-s" "--strategy STRATEGY" "Which offset strategy to use. Either \"earliest\" or \"latest\"." :parse-fn keyword :default :earliest]
