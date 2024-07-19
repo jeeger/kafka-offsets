@@ -1,0 +1,10 @@
+{:prod
+ {:broker-url "prod.broker.url.com:9092"
+  :username "username-prod"
+  :password "password-prod"
+  :registry-url "https://prod-registry-user:prod-registry-pw@prod.registry.url.cloud"}
+ :dev
+  {:broker-url "dev.broker.url.com:9092"
+   :username "username-dev"
+   :password "password-dev"
+   :registry-url "https://dev-registry-user:dev-registry-pw@dev.registry.url.cloud"}}
